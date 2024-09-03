@@ -1,101 +1,148 @@
 <!DOCTYPE html>
 <html lang="pt-br">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
     <link rel="stylesheet" href="css/style.css">
     <title>Document</title>
 </head>
+
 <body>
-    <main>
+    <main class="container mgtop">
         <form>
-            <div class="form-floating mb-3">
-                <input type="email" class="form-control" id="floatingInput" placeholder="name@example.com" required>
-                <label for="floatingInput">Pergunta 1 - Este é um input text comum</label>
-            </div>
+            <div class="row">
+                <div class="col">
+                    <div class="form-floating mb-3">
+                        <input type="email" class="form-control" id="floatingInput" placeholder="name@example.com"
+                            required>
+                        <label for="floatingInput">Pergunta 1 - Este é um input text comum</label>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="form-floating mb-3">
+                        <input type="email" class="form-control" id="floatingInputDisabled"
+                            placeholder="name@example.com" disabled>
+                        <label for="floatingInputDisabled">Pergunta 2 - Este é um input text desabilitado</label>
+                    </div>
 
-            <div class="form-floating mb-3">
-                <input type="email" class="form-control" id="floatingInputDisabled" placeholder="name@example.com" disabled>
-                <label for="floatingInputDisabled">Pergunta 2 - Este é um input text desabilitado</label>
-            </div>
+                </div>
 
-            <div class="form-floating mb-3">
-                <input type="email" readonly class="form-control-plaintext" id="floatingEmptyPlaintextInput" placeholder="name@example.com">
-                <label for="floatingEmptyPlaintextInput">Pergunta 3 - Este é um input text em modo Readonly</label>
-            </div>
+                <div class="row">
+                    <div class="col">
+                        <div class="form-floating mb-3">
+                            <input type="email" readonly class="form-control-plaintext" id="floatingEmptyPlaintextInput"
+                                placeholder="name@example.com">
+                            <label for="floatingEmptyPlaintextInput">Pergunta 3 - Este é um input text em modo
+                                Readonly</label>
+                        </div>
+                    </div>
 
-            <div class="form-floating">
-                <textarea class="form-control" placeholder="Leave a comment here" id="floatingTextarea" required></textarea>
-                <label for="floatingTextarea">Pergunta 4 - Este é um textarea</label>
-            </div>
-
-            <div class="col-md">
-                <div class="form-floating">
-                <select class="form-select" id="floatingSelectGrid" required>
-                    <option selected>Open this select menu</option>
-                    <option value="1">One</option>
-                    <option value="2">Two</option>
-                    <option value="3">Three</option>
-                </select>
-                <label for="floatingSelectGrid">Pergunta 5 - Este é um menu dropdown</label>
-            </div>
-
-            <label>Pergunta 6 - Este é um radio button</label>
-            <div class="form-check">
-                <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault1" required>
-                <label class="form-check-label" for="flexRadioDefault1">
-                Default radio
-                </label>
-            </div>
-            <div class="form-check">
-                <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault2" required>
-                <label class="form-check-label" for="flexRadioDefault2">
-                Default checked radio
-                </label>
-            </div>
-
-            <label>Pergunta 7 - Este é um checkbox</label>
-            <div class="form-check">
-                <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault" required>
-                <label class="form-check-label" for="flexCheckDefault">
-                Default checkbox
-                </label>
-            </div>
-            <div class="form-check">
-                <input class="form-check-input" type="checkbox" value="" id="flexCheckChecked" required>
-                <label class="form-check-label" for="flexCheckChecked">
-                Checked checkbox
-                </label>
-            </div>
-
-            <label for="customRange1" class="form-label">Pergunta 8 - Este é um range(intervalo)</label>
-            <input type="range" class="form-range" id="customRange1" required>
-            
-
-
-            <div class="container mt-4">
-                <div class="form-group">
-                    <label for="dateInput">Pergunta 9 - Este é um campo de data</label>
-                    <input type="date" id="dateInput" class="form-control custom-date-input" required>
+                    <div class="col">
+                        <div class="form-floating">
+                            <textarea class="form-control" placeholder="Leave a comment here" id="floatingTextarea"
+                                required></textarea>
+                            <label for="floatingTextarea">Pergunta 4 - Este é um textarea</label>
+                        </div>
+                    </div>
                 </div>
             </div>
-            
-            <div class="container mt-4">
-                <div class="form-group">
-                    <label for="timeInput">Pergunta 10 - Este é um campo de hora</label>
-                    <input type="time" id="timeInput" class="form-control custom-time-input" required>
+
+            <div class="row">
+                <div class="col">
+                    <div class="form-floating">
+                        <select class="form-select" id="floatingSelectGrid" required>
+                            <option selected>Open this select menu</option>
+                            <option value="1">One</option>
+                            <option value="2">Two</option>
+                            <option value="3">Three</option>
+                        </select>
+                        <label for="floatingSelectGrid">Pergunta 5 - Este é um menu dropdown</label>
+                    </div>
                 </div>
+
+                <div class="col">
+                    <label>Pergunta 6 - Este é um radio button</label>
+                    <div class="form-check">
+                        <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault1"
+                            required>
+                        <label class="form-check-label" for="flexRadioDefault1">
+                            Default radio
+                        </label>
+                    </div>
+                    <div class="form-check">
+                        <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault2"
+                            required>
+                        <label class="form-check-label" for="flexRadioDefault2">
+                            Default checked radio
+                        </label>
+                    </div>
+                </div>
+            </div>
+
+
+
+            <div class="row">
+
+                <div class="col">
+                    <label>Pergunta 7 - Este é um checkbox</label>
+                    <div class="form-check">
+                        <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault" required>
+                        <label class="form-check-label" for="flexCheckDefault">
+                            Default checkbox
+                        </label>
+                    </div>
+                    <div class="form-check">
+                        <input class="form-check-input" type="checkbox" value="" id="flexCheckChecked" required>
+                        <label class="form-check-label" for="flexCheckChecked">
+                            Checked checkbox
+                        </label>
+                    </div>
+                </div>
+
+                <div class="col">
+                    <label for="customRange1" class="form-label">Pergunta 8 - Este é um range (intervalo)</label>
+                    <input type="range" class="form-range" id="customRange1" min="1" max="5" step="1" value="3" required>
+                    <div class="slider-labels">
+                        <span class="numsep3">1</span>
+                        <span class="numsep">2</span>
+                        <span class="numsep">3</span>
+                        <span class="numsep">4</span>
+                        <span class="numsep2">5</span>
+                    </div>
+                </div>
+
+            <div class="row">
+            <div class="col">
+                <div class="container mt-4">
+                    <div class="form-group">
+                        <label for="dateInput">Pergunta 9 - Este é um campo de data</label>
+                        <input type="date" id="dateInput" class="form-control custom-date-input" required>
+                    </div>
+                </div>
+            </div>
+            <div class="col">
+                <div class="container mt-4">
+                    <div class="form-group">
+                        <label for="timeInput">Pergunta 10 - Este é um campo de hora</label>
+                        <input type="time" id="timeInput" class="form-control custom-time-input" required>
+                    </div>
+                </div>
+            </div>
             </div>
 
             <label>Pergunta 11 - Este é um campo de upload</label>
             <div class="input-group">
-                <input type="file" class="form-control" id="inputGroupFile04" aria-describedby="inputGroupFileAddon04" aria-label="Upload" required>
+                <input type="file" class="form-control" id="inputGroupFile04" aria-describedby="inputGroupFileAddon04"
+                    aria-label="Upload" required>
                 <button class="btn btn-outline-secondary" type="button" id="inputGroupFileAddon04">Button</button>
             </div>
-            
+
         </form>
 
     </main>
 </body>
+
 </html>
